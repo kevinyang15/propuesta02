@@ -141,10 +141,61 @@ export default function App() {
       </header>
 
       <main>
+        <section className="container proposal-tiers">
+          <h2>Dos opciones de servicio</h2>
+          <p className="muted" style={{ marginBottom: 24 }}>
+            Elegí según tu presupuesto y objetivos: <strong>Mínima</strong> (solo ofensiva y ciberseguridad) o <strong>Máxima</strong> (eso + monitoreo completo).
+          </p>
+          <div className="tiers-grid">
+            <div className="card tier-card tier-min">
+              <div className="tier-header">
+                <h3>Propuesta MÍNIMA</h3>
+                <span className="pill pill-min">Solo ataque + ciberseguridad</span>
+              </div>
+              <p className="muted" style={{ marginBottom: 12 }}>
+                Enfocada en acción directa sobre la competencia y blindaje técnico.
+              </p>
+              <ul className="tier-list">
+                <li><strong>Comunidad en acción</strong>: usar a la comunidad para comentar en publicaciones de la competencia y dar a conocer sus falencias (debilidades, reclamos no resueltos, contradicciones).</li>
+                <li><strong>Ciberseguridad</strong>: análisis de vulnerabilidades en los sistemas de la competencia (sitio web, infraestructura, posibles fallos o backdoors) para no repetir sus errores y reforzar los tuyos.</li>
+              </ul>
+              <div className="tier-footer">
+                <span className="pill">Inversión: A definir</span>
+              </div>
+            </div>
+            <div className="card tier-card tier-max">
+              <div className="tier-header">
+                <h3>Propuesta MÁXIMA</h3>
+                <span className="pill pill-max">Todo: monitoreo + ataque + ciberseguridad</span>
+              </div>
+              <p className="muted" style={{ marginBottom: 12 }}>
+                Incluye todo lo de la propuesta mínima más monitoreo 24/7 e inteligencia competitiva.
+              </p>
+              <ul className="tier-list">
+                <li>Todo lo de la <strong>Propuesta mínima</strong> (comunidad + ciberseguridad).</li>
+                <li><strong>Social Listening 24/7</strong>: monitoreo de comentarios en tus publicaciones, mensajes directos, menciones; clasificación por sentimiento; protocolos de respuesta; reportes semanales o quincenales.</li>
+                <li><strong>Análisis de competencia</strong>: seguidores, publicaciones y ads; segmentación de audiencia; benchmarking de contenido y performance.</li>
+                <li><strong>Reputación y Meta Ads</strong>: monitoreo de comentarios en publicaciones de la competencia; revisión de biblioteca de anuncios de Meta (campañas, creatividades, mensajes).</li>
+                <li><strong>Metodología completa</strong>: setup (palabras clave, extracción de datos, dashboards), operación mensual, informe mensual y reunión de seguimiento.</li>
+                <li><strong>Entregables</strong>: dashboards de reputación y competencia, documento de estrategia, guías operativas (respuestas a comentarios, lineamientos éticos/legales).</li>
+              </ul>
+              <div className="tier-footer">
+                <span className="pill">Setup: A definir · Operación mensual: A definir</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <section className="container">
-          <h2>Alcance del servicio</h2>
+          <h2>Alcance del servicio (detalle)</h2>
+          <p className="muted" style={{ marginBottom: 16 }}>
+            Cada servicio indicado con <span className="pill pill-min" style={{ marginRight: 6 }}>Mínima</span> o <span className="pill pill-max">Máxima</span> según en qué propuesta está incluido.
+          </p>
           <div className="grid">
             <div className="card">
+              <div className="card-badges">
+                <span className="pill pill-max">Solo Máxima</span>
+              </div>
               <h3>Social Listening 24/7</h3>
               <p className="muted">
                 Monitoreo continuo de comentarios en publicaciones propias (Instagram, Facebook),
@@ -154,6 +205,9 @@ export default function App() {
               <span className="pill">Sentimiento · Alertas · Guías de respuesta</span>
             </div>
             <div className="card">
+              <div className="card-badges">
+                <span className="pill pill-max">Solo Máxima</span>
+              </div>
               <h3>Análisis de competencia</h3>
               <p className="muted">
                 Seguidores, publicaciones y ads de la competencia. Segmentación de audiencia,
@@ -163,6 +217,9 @@ export default function App() {
               <span className="pill">Seguidores · Publicaciones · Ads</span>
             </div>
             <div className="card">
+              <div className="card-badges">
+                <span className="pill pill-max">Solo Máxima</span>
+              </div>
               <h3>Reputación y Ads Meta</h3>
               <p className="muted">
                 Monitoreo de comentarios públicos en publicaciones de la competencia para
@@ -172,6 +229,10 @@ export default function App() {
               <span className="pill">Comunidad · Insights · Meta Ads</span>
             </div>
             <div className="card">
+              <div className="card-badges">
+                <span className="pill pill-min">Mínima</span>
+                <span className="pill pill-max">Máxima</span>
+              </div>
               <h3>Ciberseguridad y vulnerabilidades</h3>
               <p className="muted">
                 Análisis de vulnerabilidades en los sistemas (sitios web, infraestructura,
@@ -309,6 +370,10 @@ export default function App() {
           <h2>Comunidad y reputación frente a la competencia</h2>
           <div className="grid">
             <div className="card">
+              <div className="card-badges">
+                <span className="pill pill-min">Mínima</span>
+                <span className="pill pill-max">Máxima</span>
+              </div>
               <h3>Poner a la comunidad en acción</h3>
               <p className="muted">
                 Podemos usar a la comunidad para hacer comentarios sobre la competencia y dar
@@ -319,6 +384,9 @@ export default function App() {
               <span className="pill">Comentarios · Visibilidad de falencias</span>
             </div>
             <div className="card">
+              <div className="card-badges">
+                <span className="pill pill-max">Solo Máxima</span>
+              </div>
               <h3>Monitoreo e insights</h3>
               <p className="muted">
                 Monitorear comentarios públicos en sus posts: reclamos recurrentes,
@@ -386,38 +454,63 @@ export default function App() {
 
         <section className="container">
           <h2>Inversión (referencial)</h2>
-          <div className="card">
-            <div className="grid" style={{ gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))" }}>
-              <div>
-                <strong>Setup inicial</strong>
-                <p className="muted">Configuración scrapers, dashboards, protocolos.</p>
-                <span className="pill">A definir</span>
-              </div>
-              <div>
-                <strong>Operación mensual</strong>
-                <p className="muted">Monitoreo + análisis + informes + reunión.</p>
-                <span className="pill">A definir/mes</span>
+          <div className="grid" style={{ gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: 20 }}>
+            <div className="card investment-card">
+              <span className="pill pill-min">Propuesta Mínima</span>
+              <h3 style={{ marginTop: 12 }}>Un solo pago o paquete</h3>
+              <p className="muted">Comunidad en acción + ciberseguridad. Sin monitoreo continuo.</p>
+              <span className="pill">A definir</span>
+            </div>
+            <div className="card investment-card">
+              <span className="pill pill-max">Propuesta Máxima</span>
+              <h3 style={{ marginTop: 12 }}>Setup + operación mensual</h3>
+              <p className="muted">Setup inicial (scrapers, dashboards, protocolos) + monitoreo, análisis, informes y reunión cada mes.</p>
+              <div style={{ display: "flex", flexWrap: "wrap", gap: 8, marginTop: 8 }}>
+                <span className="pill">Setup: A definir</span>
+                <span className="pill">Mensual: A definir</span>
               </div>
             </div>
           </div>
         </section>
 
         <section className="container">
-          <h2>Resumen de capacidades demostradas</h2>
+          <h2>Resumen: qué incluye cada propuesta</h2>
+          <div className="grid" style={{ gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))" }}>
+            <div className="card">
+              <span className="pill pill-min">MÍNIMA</span>
+              <ul className="tier-list" style={{ marginTop: 12 }}>
+                <li>Comunidad comentando sobre la competencia y dando a conocer sus falencias.</li>
+                <li>Ciberseguridad: análisis de vulnerabilidades de la competencia para no repetir sus errores.</li>
+              </ul>
+            </div>
+            <div className="card">
+              <span className="pill pill-max">MÁXIMA</span>
+              <ul className="tier-list" style={{ marginTop: 12 }}>
+                <li>Todo lo de la propuesta mínima.</li>
+                <li>Social Listening 24/7 (monitoreo, sentimiento, reportes).</li>
+                <li>Análisis de seguidores y publicaciones de la competencia.</li>
+                <li>Reputación y monitoreo de Ads Meta.</li>
+                <li>Metodología completa y entregables (dashboards, estrategia, guías).</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section className="container">
+          <h2>Capacidades demostradas</h2>
           <div className="card">
             <ul className="rank-list" style={{ listStyle: "disc", paddingLeft: 20 }}>
               <li>
                 <strong>Seguidores de la competencia</strong>: extracción y análisis para
-                segmentación, perfiles relevantes y oportunidades (ej. @institutoalmaviva).
+                segmentación, perfiles relevantes y oportunidades (ej. @institutoalmaviva). <span className="pill pill-max small">Máxima</span>
               </li>
               <li>
                 <strong>Publicaciones de la competencia</strong>: extracción y análisis para
-                benchmarking de contenido, engagement y calendario editorial.
+                benchmarking de contenido, engagement y calendario editorial. <span className="pill pill-max small">Máxima</span>
               </li>
               <li>
                 <strong>Ciberseguridad</strong>: análisis de vulnerabilidades en los sistemas
-                de la competencia (sitios web, infraestructura) para no repetir sus errores
-                y reforzar los tuyos.
+                de la competencia para no repetir sus errores. <span className="pill pill-min small">Mínima</span> <span className="pill pill-max small">Máxima</span>
               </li>
             </ul>
             <p className="muted" style={{ marginTop: 12 }}>

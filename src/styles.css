@@ -512,6 +512,91 @@ button {
   margin: 0;
 }
 
+/* Propuesta Mínima vs Máxima */
+.proposal-tiers {
+  margin-bottom: 48px;
+}
+
+.tiers-grid {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr));
+}
+
+.tier-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.tier-card .tier-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 12px;
+  margin-bottom: 8px;
+}
+
+.tier-card .tier-header h3 {
+  margin: 0;
+}
+
+.tier-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 16px;
+  flex: 1;
+}
+
+.tier-list li {
+  margin-bottom: 12px;
+  padding-left: 16px;
+  position: relative;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.tier-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--primary);
+}
+
+.tier-footer {
+  margin-top: auto;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+}
+
+.tier-min {
+  border-color: rgba(154, 163, 178, 0.4);
+}
+
+.tier-max {
+  border-color: rgba(0, 255, 102, 0.35);
+}
+
+.pill-min {
+  background: rgba(154, 163, 178, 0.2);
+  color: var(--neutral);
+}
+
+.pill-max {
+  background: rgba(0, 255, 102, 0.2);
+  color: var(--primary);
+}
+
+.card-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 8px;
+  margin-bottom: 10px;
+}
+
+.investment-card h3 {
+  font-size: 1.1rem;
+}
+
 @media (max-width: 720px) {
   .timeline-item {
     grid-template-columns: 1fr;
