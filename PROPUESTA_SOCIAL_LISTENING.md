@@ -1,171 +1,137 @@
-# Propuesta de servicio  
-## Social Listening, Gestión de Reputación y Análisis de Competencia
+# Propuesta de Gestión Estratégica de Reputación Digital  
+## Control, depuración y reposicionamiento de SERPs para una persona
 
-**Ejemplo de benchmark:** [@institutoalmaviva](https://www.instagram.com/institutoalmaviva) (Instagram)
-
----
-
-## 1. Objetivo general
-
-Implementar un sistema de **social listening 24/7** e **inteligencia competitiva** que:
-
-- Detecte y minimice comentarios negativos sobre la marca.
-- Monitoree de forma continua a la competencia (ej. @institutoalmaviva).
-- Anticipe crisis de reputación y oportunidades de contenido.
-- Entregue insights accionables para mejorar oferta, comunicación y producto.
-
-*Todo el trabajo se plantea dentro de buenas prácticas legales y éticas: análisis de datos públicos, sin acoso, sin difamación y sin realizar tests de hacking sobre terceros sin autorización.*
+**Objetivo:** intervenir la visibilidad en buscadores asociada al **nombre de la persona** (y variantes de búsqueda) para reducir el impacto de resultados negativos y reconstruir una narrativa digital coherente y favorable.
 
 ---
 
-## 2. Alcance del servicio
+## 1. Resumen ejecutivo de la problemática
 
-### 2.1. Social Listening 24/7 (marca propia)
+Actualmente, las menciones negativas en medios digitales de alta autoridad suelen **dominar los resultados** cuando alguien busca el nombre o la keyword objetivo. Esos contenidos, al estar en dominios muy fuertes (por ejemplo portales de noticias), se posicionan de forma rápida y sostenida y afectan la percepción pública y reputacional de la persona.
 
-- **Monitoreo continuo** de:
-  - Comentarios en publicaciones propias (Instagram, Facebook y otras redes definidas).
-  - Mensajes directos y menciones públicas.
-  - Palabras clave relacionadas con la marca, cursos, eventos y temas sensibles del sector.
-- **Detección de riesgo reputacional**:
-  - Clasificación de comentarios por **sentimiento** (positivo / neutro / negativo).
-  - Identificación de temas críticos: quejas de atención, promesas no cumplidas, dudas recurrentes, temas legales/sensibles.
-- **Protocolos de respuesta**:
-  - Guías de respuesta para comentarios negativos, dudas frecuentes y comentarios positivos.
-- **Reportes periódicos**:
-  - Informe semanal/quincenal con volumen de comentarios, % negativos/positivos, temas más mencionados y casos críticos gestionados.
+A nivel técnico, esas **URLs concretas** presentan una vulnerabilidad: con el tiempo pierden relevancia dentro del propio sitio por dilución del enlazado interno (*internal link equity*) y falta de actualización: la “**decadencia de autoridad de página**”. Eso abre margen para actuar en los buscadores con una **metodología dual**: pedir la eliminación del índice cuando las políticas de Google/Bing lo permitan, y **desplazar** mediante SEO inverso lo que no se pueda retirar.
+
+La propuesta no es solo técnica: incluye la **reconstrucción del sentido y la narrativa digital** de la persona, consolidando un posicionamiento reputacional más alineado con su trayectoria y su proyecto vital o profesional.
 
 ---
 
-## 3. Análisis de comunidad y seguidores (competencia)
+## 2. Metodología de intervención
 
-Utilizamos estructuras equivalentes a **`followers.json`** (muestra real de seguidores de @institutoalmaviva) para demostrar capacidad técnica.
+Estrategia **dual**, con mirada digital directa sobre **Google y Bing**: visibilidad, índice y intención de búsqueda.
 
-### 3.1. Qué hacemos con datos tipo `followers.json`
+### A. Depuración de índice (desindexación)
 
-A partir de un archivo como `followers.json` (lista de seguidores con `username`, `fullName`, `isPrivate`, `isVerified`, `timestamp`, etc.) podemos:
+No se puede **garantizar** la eliminación total de todas las URLs negativas; sí se ejecuta una **campaña sistemática** de auditoría y solicitudes alineadas a las políticas de cada buscador.
 
-- **Segmentar la audiencia de la competencia**:
-  - Porcentaje de perfiles privados vs públicos.
-  - Identificación de perfiles relevantes (profesionales del área, influencers, instituciones).
-  - Clusters por tipo de perfil según bio/username (cuando sea posible y sin vulnerar privacidad).
-- **Mapear oportunidades**:
-  - Perfiles que siguen a varias marcas del nicho (alto interés).
-  - Construcción de “personas” a partir de patrones de nombres, idiomas y tipos de cuenta.
+En **temas sensibles**, las vías genéricas de “derecho al olvido” suelen tener impacto acotado; por eso la estrategia **prioriza el análisis de infracciones técnicas** detectables en cada nota: **DMCA** (p. ej. uso no autorizado de imágenes propias de la persona), **PII** (datos personales expuestos sin consentimiento), **directrices** de contenido de los buscadores, u otras bases objetivas, para intentar el retiro **desde la raíz del índice** cuando corresponda.
 
-**Ejemplo de entregable:** tabla/resumen con perfiles más relevantes de los seguidores de @institutoalmaviva; métricas: total analizado, % profesionales de salud mental estimados, % internacional vs nacional.
+**Mapeo y triage (Top 30 en Google y Bing):**
 
-*Siempre sobre datos públicos y sin contacto intrusivo: el foco es entender la audiencia, no acosarla.*
+- Búsqueda del **nombre de la persona** y **variaciones** de palabras clave; registro de posición, URL, autoridad del dominio y **autoridad de la URL** (para seguimiento en el tiempo).
+- Clasificación de viabilidad por tipo de infracción o argumento admitido por cada plataforma.
 
-### 3.2. Demostración técnica: estructura `followers.json`
+**Formularios y canales oficiales:**
 
-El archivo **`followers.json`** de este proyecto contiene una muestra de seguidores de @institutoalmaviva. Cada registro incluye:
+- Solicitudes mediante el **panel de retirada de contenido por motivos legales** de Google y la **herramienta equivalente de Bing**, con la documentación que exijan los revisores.
+- Cuando aplique, se redactan justificaciones técnicas y jurídicas (p. ej. balance privacidad / interés público). En muchos casos sensibles **no** se espera que esa vía por sí sola resuelva el caso; por eso convive con el frente B.
 
-| Campo        | Descripción                                      |
-|-------------|---------------------------------------------------|
-| `username`  | Usuario de Instagram                             |
-| `fullName`  | Nombre mostrado en el perfil                     |
-| `profileUrl`| Enlace al perfil                                 |
-| `isPrivate` | Si la cuenta es privada                          |
-| `isVerified`| Si tiene verificación oficial                    |
-| `query`     | Cuenta de la que se extrajeron (competencia)     |
-| `timestamp` | Fecha/hora de la extracción                      |
+**Efecto Streisand y base Lumen:**
 
-Con estos datos podemos generar informes de segmentación, tendencias de crecimiento de audiencia y perfiles objetivo para estrategias de contenido y paid media.
+- En retiros por motivos legales (p. ej. DMCA), los buscadores pueden reflejar solicitudes en bases públicas como **Lumen**, monitorizables por periodistas e investigadores.
+- Se evalúa **costo/beneficio** ante el riesgo de **amplificación** (nuevas notas sobre el intento de retiro). En escenarios donde el periodismo de investigación vigila esas bases, **no** se priorizan acciones que generen nuevas “fuentes negativas”; el diseño de la campaña evita disparar señales innecesarias en ese sentido.
+
+### B. Desplazamiento de contenido (SEO inverso)
+
+Para lo que **resista** la desindexación, se aplica **supresión en SERP**: **saturar las primeras tres páginas** con activos controlados y **empujar** resultados desfavorables hacia la **página 4 en adelante** (posición **31+**), donde el tráfico orgánico hace clic en la práctica deja de ser relevante.
+
+Medios:
+
+- Ecosistema de **activos digitales controlados** (ver sección 3).
+- Posicionamiento y mantenimiento para ocupar las primeras posiciones con intención alineada a la persona.
 
 ---
 
-## 4. Análisis de contenido y performance (competencia)
+## 3. Ecosistema de fuentes y plan de acción
 
-Utilizamos estructuras tipo **`post.json`** para demostrar que podemos extraer y analizar publicaciones públicas de la competencia.
+### Volumen
 
-En **`post.json`** ya tenemos posts de @institutoalmaviva con: `postUrl`, `description`, `commentCount`, `likeCount`, `pubDate`, `type` (Photo/Video), `playCount`, etc.
+~10 resultados orgánicos por página → objetivo base **~30** posiciones (tres primeras páginas). Con resistencia algorítmica y tasa de fallo estimada **20–35%** en activos nuevos, **margen de seguridad del 50%** → **45 fuentes controladas** planificadas.
 
-### 4.1. Qué hacemos con datos tipo `post.json`
+### Tipología (SERP diversity)
 
-- **Calendario y formatos**:
-  - Frecuencia de publicación (posts por semana/mes).
-  - Mix de formatos: foto, video, carrusel, Reels.
-- **Performance**:
-  - Ranking de posts por likes, comentarios y reproducciones.
-  - Temas que más engagement generan (estudios científicos, eventos, pós-graduação, etc.).
-- **Ángulos ganadores**:
-  - Tipos de copy y estructura que generan más interacción.
-  - CTAs más efectivos (“comente Turma 4”, “Evento IAV”, etc.).
-- **Benchmark**:
-  - Comparar desempeño de contenido propio vs competencia.
+Arquitectura variada para alinearse a la **diversidad de formatos** que favorecen los buscadores:
 
-*El enfoque es aprender qué les funciona, identificar puntos ciegos y capitalizar construyendo una propuesta superior y más confiable.*
+- Sitios propios (blogs, webs satélite).
+- Perfiles sociales de alta indexación (Instagram, Facebook, X, Pinterest, etc.).
+- Prensa digital de alcance medio, Web 2.0 y artículos en medios donde encaje la estrategia.
+- Multimedia: vídeo (p. ej. YouTube, que ocupa mucho espacio visual), imágenes, perfiles enriquecidos, **repositorios académicos o profesionales** y directorios sectoriales cuando apliquen.
 
-### 4.2. Demostración técnica: estructura `post.json`
+### Lógica de posicionamiento
 
-El archivo **`post.json`** contiene publicaciones recientes de @institutoalmaviva. Cada post incluye:
+- **Entidades y Schema** (`Person`, `Organization`, `SameAs`, etc.): señales estructuradas que muchas notas genéricas no optimizan.
+- **Autoridad:** linkbuilding para fortalecer dominios y URLs propias (referencia de trabajo: **DR orientativo 50–60** en activos principales, según nicho y competencia).
+- **Freshness (QDF — *Query Deserves Freshness*)**: contenido actualizado de forma sostenida frente a noticias estáticas sin tráfico ni renovación.
 
-| Campo          | Descripción                                |
-|----------------|--------------------------------------------|
-| `postUrl`      | Enlace a la publicación                    |
-| `description`  | Texto/caption completo                     |
-| `commentCount` | Número de comentarios                      |
-| `likeCount`    | Número de likes                            |
-| `playCount`    | Reproducciones (videos)                    |
-| `pubDate`      | Fecha de publicación                       |
-| `type`         | Photo / Video                              |
-| `username`     | Cuenta que publicó (competencia)           |
+### Por qué puede competir una “fuente propia” con un medio
 
-Con estos datos generamos reportes de contenido: mejores horarios, temas con más engagement y recomendaciones de calendario editorial.
+**Ciclo de vida típico de la nota** (ej. grandes portales tipo Infobae, El País, etc.): al publicarse, la URL recibe fuerza desde **home** y **categorías**; luego suele **perder enlaces internos** recientes y quedar a más profundidad (**efecto página huérfana / orphan page**). La **autoridad de dominio** del medio sigue alta, pero la **autoridad de página** (métricas tipo UR/PA) de esa URL puede caer. Las fuentes propias, con señal de entidad, enlaces y actualización, pueden ganar terreno frente a esa URL concreta.
 
 ---
 
-## 5. Gestión de reputación comparada (sin ataques)
+## 4. Lineamiento estratégico, táctico y discursivo
 
-- **No organizamos ataques ni campañas negativas** contra la competencia.
-- **Sí hacemos**:
-  - Monitorear comentarios públicos en publicaciones de la competencia: reclamos recurrentes, insatisfacciones, dudas sin responder.
-  - Usar esos insights para tu estrategia: contenidos que resuelvan esos puntos débiles sin nombrar al competidor (ej. ética, protocolos, certificaciones).
-  - Estrategia de comunidad a favor de tu marca: testimonios, reviews, referral y fidelización.
+La estrategia incorpora la **reconstrucción narrativa** de la persona, no solo tácticas de ranking.
 
----
+### 4.1 Estratégico
 
-## 6. Monitoreo de Ads (Meta)
+- Narrativa dominante que desplace el eje del conflicto.
+- Posicionamiento de la persona como figura legítima, profesional o referente.
+- Identidad digital coherente en todos los activos.
+- Mayor control sobre lo que los terceros ven al buscar el nombre.
 
-- Revisión de la **biblioteca de anuncios de Meta** de la competencia: campañas, creatividades, mensajes clave.
-- Insights para tu paid media: posicionamientos que destaquen tus diferenciales y ocupen espacios donde la competencia no comunica bien.
+### 4.2 Táctico
 
----
+- Contenido optimizado: **SEO + reputación**.
+- *Cross-linking* entre activos, backlinks de calidad, sincronización entre plataformas.
+- Actualización constante (*freshness*).
 
-## 7. Metodología de trabajo
+### 4.3 Discursivo
 
-| Fase              | Actividad                                                                 |
-|-------------------|---------------------------------------------------------------------------|
-| **Setup (1ª–2ª semana)** | Definición de palabras clave, perfiles y hashtags; configuración de extracción de datos (followers + posts); diseño de dashboards. |
-| **Operación mensual**   | Captura y actualización de datos; análisis de comentarios; benchmark con competencia. |
-| **Seguimiento**         | Informe mensual + reunión online para ajustar estrategia.                 |
+- Ejes claros (trayectoria, expertise, impacto positivo, innovación, etc.).
+- Tono homogéneo; sustitución progresiva de asociaciones negativas por positivas.
+- Contenido alineado a la **intención de búsqueda** del usuario desde una perspectiva favorable a la persona.
 
 ---
 
-## 8. Entregables
+## 5. Acciones técnicas y operativas
 
-- **Dashboards / reportes**: panel de reputación (sentimiento, volumen, tópicos críticos); panel de competencia (seguidores, posts, temas ganadores).
-- **Documento de estrategia**: propuesta de contenidos mensuales; mejoras en producto/servicio para diferenciarse.
-- **Guías operativas**: manual de respuestas a comentarios; lineamientos éticos/legales para community management.
-
----
-
-## 9. Inversión (referencial)
-
-| Concepto              | Descripción                                      | Monto        |
-|-----------------------|--------------------------------------------------|--------------|
-| **Setup inicial**     | Configuración scrapers, dashboards, protocolos   | A definir    |
-| **Operación mensual** | Monitoreo + análisis + informes + reunión       | A definir/mes |
+- Entidades digitales y presencia en **Knowledge Graph** (donde aplique).
+- Schema avanzado.
+- Linkbuilding de alta autoridad.
+- Producción y optimización SEO.
+- **Monitoreo continuo de SERPs** y ajustes según evolución algorítmica.
 
 ---
 
-## 10. Resumen de capacidades demostradas
+## 6. Plazos y cronograma
 
-- **`followers.json`**: extracción y análisis de seguidores de la competencia (ej. @institutoalmaviva) para segmentación y oportunidades.
-- **`post.json`**: extracción y análisis de publicaciones para benchmarking de contenido, engagement y calendario.
+**12 meses**, en tres etapas:
 
-Ambos archivos de ejemplo forman parte de esta propuesta y confirman la capacidad técnica para entregar social listening e inteligencia competitiva de forma operativa.
+1. Cimentación (infraestructura y activos iniciales).
+2. Tracción (posicionamiento y crecimiento).
+3. Consolidación (estabilización y dominio de SERPs).
+
+Las condiciones económicas y la forma de pago se definen por separado con la persona o su representante.
 
 ---
 
-*Documento generado para la propuesta de Social Listening e Inteligencia Competitiva. Febrero 2026.*
+## 7. Alcance del proyecto y condiciones
+
+- **Profundidad en SERPs:** la arquitectura (45 fuentes) está pensada para trabajar la **limpieza de las primeras tres páginas** y empujar lo indeseable hacia **posición 31+**. Una mayor profundidad (páginas 5, 6…) implica **nueva evaluación** y ampliación del ecosistema.
+- **Snapshot de auditoría:** el alcance de desindexación y desplazamiento aplica a **URLs negativas existentes y documentadas** en la auditoría inicial. **No constituye garantía** frente a **nuevos** resultados negativos, campañas de difamación o noticias publicadas **después** de ese corte (durante o después del proyecto).
+- **Foco geográfico:** prioridad **Google y Bing**, con foco en búsquedas **geolocalizadas en Argentina** (ajustable según briefing).
+- **Transferencia de activos (handover):** el proyecto **no pretende generar dependencia permanente**. Al cierre, transferencia de **titularidad** de dominios, hosting, credenciales de redes y control del contenido; a partir de allí la persona gestiona renovación y mantenimiento habitual de los activos.
+
+---
+
+*Documento alineado a los materiales de trabajo: depuración reputacional, desindexación + SEO inverso, y propuesta de gestión estratégica. Marzo 2026.*

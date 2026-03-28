@@ -1,7 +1,6 @@
-# Propuesta Social Listening
+# Propuesta — Reputación digital y SERPs
 
-Propuesta en React + Vite con análisis de sentimiento y lectura de datos desde
-`x.json` e `insta.json`.
+Landing en React + Vite para la propuesta de **gestión estratégica de reputación digital** (control y depuración de SERPs, SEO inverso). El texto completo está en `PROPUESTA_SOCIAL_LISTENING.md`.
 
 ## Comandos
 
