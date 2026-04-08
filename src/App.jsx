@@ -234,8 +234,8 @@ export default function App() {
             <div className="card">
               <h3>Geo y plataformas</h3>
               <p className="muted">
-                Prioridad Google y Bing, búsquedas geolocalizadas en Argentina (ajustable por
-                briefing).
+                Prioridad Google y Bing; geolocalización en los países o regiones a determinar
+                según los mercados donde se opere (definidos en el briefing).
               </p>
             </div>
             <div className="card">

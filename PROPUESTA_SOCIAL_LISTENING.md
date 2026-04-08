@@ -129,7 +129,7 @@ Las condiciones económicas y la forma de pago se definen por separado con la pe
 
 - **Profundidad en SERPs:** la arquitectura (45 fuentes) está pensada para trabajar la **limpieza de las primeras tres páginas** y empujar lo indeseable hacia **posición 31+**. Una mayor profundidad (páginas 5, 6…) implica **nueva evaluación** y ampliación del ecosistema.
 - **Snapshot de auditoría:** el alcance de desindexación y desplazamiento aplica a **URLs negativas existentes y documentadas** en la auditoría inicial. **No constituye garantía** frente a **nuevos** resultados negativos, campañas de difamación o noticias publicadas **después** de ese corte (durante o después del proyecto).
-- **Foco geográfico:** prioridad **Google y Bing**, con foco en búsquedas **geolocalizadas en Argentina** (ajustable según briefing).
+- **Foco geográfico:** prioridad **Google y Bing**, con foco en búsquedas **geolocalizadas en los países o regiones que se determinen** según los mercados donde se opere (definidos en el briefing).
 - **Transferencia de activos (handover):** el proyecto **no pretende generar dependencia permanente**. Al cierre, transferencia de **titularidad** de dominios, hosting, credenciales de redes y control del contenido; a partir de allí la persona gestiona renovación y mantenimiento habitual de los activos.
 
 ---
